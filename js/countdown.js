@@ -1,4 +1,4 @@
-// Counts down to 4:30 PM IST on 10 October, whatever the visitor's own time zone.
+// Counts down to 3:00 PM IST on 10 October, whatever the visitor's own time zone.
 (function () {
   const ticket = document.querySelector('.ticket');
   if (!ticket) return;
