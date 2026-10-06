@@ -14,7 +14,7 @@
 <link rel="stylesheet" href="css/base.css">
 <link rel="stylesheet" href="css/paper.css">
 <link rel="stylesheet" href="css/buttons.css">
-
+<link rel="stylesheet" href="css/hero.css">
 </head>
 <body>
 
@@ -29,7 +29,46 @@
   <symbol id="compass" viewBox="0 0 200 200" fill="none" stroke="currentColor"><circle cx="100" cy="100" r="92" stroke-width="1"/><circle cx="100" cy="100" r="78" stroke-width=".6" stroke-dasharray="2 4"/><circle cx="100" cy="100" r="56" stroke-width=".8"/><path d="M100 4v192M4 100h192M32 32l136 136M168 32 32 168" stroke-width=".5"/><path d="M100 14 110 90 186 100 110 110 100 186 90 110 14 100 90 90Z" fill="currentColor" fill-opacity=".14" stroke-width="1"/><path d="M100 14 110 90 100 100ZM186 100 110 110 100 100ZM100 186 90 110 100 100ZM14 100 90 90 100 100Z" fill="currentColor" fill-opacity=".5"/><text x="100" y="11" font-size="10" text-anchor="middle" fill="currentColor" stroke="none" font-family="serif">N</text></symbol>
 </svg>
 
-<script src="js/config.js"></script>
+<header class="hero">
+  <div class="chart-corner tl" aria-hidden="true"><svg><use href="#compass"/></svg></div>
+  <div class="wrap">
+    <div class="hosts-row">
+      <div class="host"><img src="assets/img/logo-pichavaram.jpg" alt="Pichavaram House crest" width="272" height="272"><span>Pichavaram<br>House</span></div>
+      <span class="x" aria-hidden="true">×</span>
+      <div class="host"><img src="assets/img/logo-iris.jpg" alt="Iris Society, IITM BS Degree" width="272" height="272"><span>Iris<br>Society</span></div>
+      <span class="x" aria-hidden="true">×</span>
+      <div class="host"><img src="assets/img/logo-nallamala.jpg" alt="Nallamala House crest" width="272" height="272"><span>Nallamala<br>House</span></div>
+    </div>
+    <p class="presents">Presents</p>
 
+    <div class="hero-title">
+      <h1>Albert Hall</h1>
+      <span class="museum">Museum<svg viewBox="0 0 600 40" preserveAspectRatio="none" aria-hidden="true"><path d="M6 30 C140 10 380 4 594 14" stroke="currentColor" stroke-width="9" fill="none" stroke-linecap="round" opacity=".8"/></svg></span>
+      <p class="note">Photoshoot<br>&nbsp;&nbsp;Meetup</p>
+    </div>
+
+    <div class="hero-body">
+      <ul class="facts">
+        <li><svg aria-hidden="true"><use href="#i-cal"/></svg><div><b>10 October</b><span>Saturday</span></div></li>
+        <li><svg aria-hidden="true"><use href="#i-clock"/></svg><div><b>4:30 PM</b><span>Onwards</span></div></li>
+        <li><svg aria-hidden="true"><use href="#i-pin"/></svg><div><b>Albert Hall</b><span>Museum · Jaipur</span></div></li>
+      </ul>
+      <figure class="hero-photo">
+        <span class="tape a" aria-hidden="true"></span>
+        <img src="assets/img/museum.jpg" alt="Albert Hall Museum at sunset, its domes lit gold against an orange sky" width="680" height="425">
+        <span class="tape b" aria-hidden="true"></span>
+        <figcaption class="caption">Capture the moments ♡</figcaption>
+      </figure>
+    </div>
+
+    <div class="hero-cta">
+      <a class="btn btn-primary" data-register href="#register">Register now <svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
+      <a class="btn btn-ghost" href="#light">See the light</a>
+    </div>
+  </div>
+</header>
+
+<script src="js/config.js"></script>
+<script src="js/links.js"></script>
 </body>
 </html>
