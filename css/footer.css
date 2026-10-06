@@ -1,0 +1,7 @@
+.footer { padding: 54px 0 40px; border-top: 1px solid var(--line); }
+.footer .row { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 18px 30px; }
+.motto { display: flex; align-items: center; gap: 16px; font: 700 14px/1 var(--f-caps); letter-spacing: .3em; text-transform: uppercase; }
+.motto i { width: 5px; height: 5px; background: var(--ink); transform: rotate(45deg); display: inline-block; }
+.footer .see { font: 600 30px/1 var(--f-hand); transform: rotate(-4deg); }
+.credit { margin-top: 26px; font-size: 14px; color: var(--muted); }
+.credit b { color: var(--ink); font-weight: 600; }
