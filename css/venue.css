@@ -1,0 +1,18 @@
+/* Getting there: an address card pinned over a hand-drawn route. */
+.venue-grid { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: clamp(24px, 5vw, 56px); align-items: center; margin-top: clamp(28px, 5vw, 48px); }
+.card {
+  position: relative; background: var(--paper-hi); padding: clamp(24px, 4vw, 38px); box-shadow: var(--shadow-paper);
+  border: 1px solid var(--line);
+}
+.card .pin { position: absolute; top: -14px; left: 26px; width: 28px; height: 28px; color: var(--ink); }
+.card h3 { font: 400 30px/1.1 var(--f-display); }
+.card address { font-style: normal; color: var(--ink-2); margin: 10px 0 22px; }
+.card dl { display: grid; grid-template-columns: auto 1fr; gap: 10px 18px; margin: 0 0 24px; }
+.card dt { font: 700 12px/1.7 var(--f-caps); letter-spacing: .2em; text-transform: uppercase; color: var(--muted); }
+.card dd { margin: 0; }
+.route { width: 100%; height: auto; color: var(--ink); }
+.route .road { stroke: var(--ink); stroke-width: 1.5; fill: none; opacity: .35; }
+.route .path { stroke: var(--ink); stroke-width: 2.5; fill: none; stroke-dasharray: 8 8; }
+.route text { font: 600 22px var(--f-hand); fill: var(--ink); }
+
+@media (max-width: 820px) { .venue-grid { grid-template-columns: 1fr; } }
