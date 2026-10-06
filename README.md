@@ -1,6 +1,6 @@
-# Albert Hall Museum · Photoshoot Meetup
+# Albert Hall Museum · Photowalk Meetup
 
-The event page for a golden-hour photoshoot meetup at **Albert Hall Museum, Jaipur**,
+The event page for a golden-hour photowalk at **Albert Hall Museum, Jaipur**,
 on **Saturday 10 October 2026, 4:30 PM onwards**.
 
 Presented by **Pichavaram House × Iris Society × Nallamala House** (IIT Madras BS Degree).
@@ -10,7 +10,7 @@ Presented by **Pichavaram House × Iris Society × Nallamala House** (IIT Madras
 - A live countdown to 4:30 PM IST, whatever time zone you open it in.
 - The evening's light (golden hour, sunset, blue hour) worked out from the sun's position over
   Albert Hall on 10 October, not typed in by hand.
-- The prizes: ₹8,000, ₹5,000 and ₹3,000 Amazon vouchers for the three best photographs.
+- How the evening goes: meet at 4:30, walk through golden hour, stay for the lights at blue hour.
 - A shot list you can tick off on the day. It is saved on your own phone only.
 - The museum's story, directions, and the register button.
 
