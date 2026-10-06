@@ -1,4 +1,4 @@
-/* Prizes as postage stamps with perforated edges. */
+/* The three stops of the walk, as postage stamps with perforated edges. */
 .stamps { display: grid; grid-template-columns: repeat(3, 1fr); gap: clamp(18px, 3vw, 34px); margin-top: clamp(32px, 5vw, 52px); }
 .stamp {
   --hole: 7px;
