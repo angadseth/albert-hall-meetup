@@ -1,0 +1,32 @@
+/* A shot list on ruled notebook paper, beside a polaroid. */
+.shots-grid { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 340px); gap: clamp(28px, 5vw, 64px); align-items: start; margin-top: clamp(28px, 5vw, 48px); }
+.notebook {
+  position: relative; padding: 26px clamp(18px, 4vw, 36px) 26px clamp(44px, 7vw, 72px);
+  background:
+    linear-gradient(90deg, transparent calc(clamp(32px, 5vw, 54px)), rgba(168, 70, 50, .35) 0 calc(clamp(32px, 5vw, 54px) + 1.5px), transparent 0),
+    repeating-linear-gradient(180deg, transparent 0 43px, rgba(60, 90, 130, .22) 43px 44px),
+    var(--paper-hi);
+  box-shadow: var(--shadow-paper);
+}
+.notebook .tape { top: -12px; left: 40%; transform: rotate(-3deg); }
+.shot { display: flex; align-items: center; gap: 14px; min-height: 44px; cursor: pointer; user-select: none; }
+.shot input { position: absolute; opacity: 0; pointer-events: none; }
+.shot .box { flex: none; width: 22px; height: 22px; border: 1.5px solid var(--ink); border-radius: 3px; position: relative; }
+.shot .box svg { position: absolute; inset: -6px -8px -4px -2px; width: 34px; height: 30px; opacity: 0; transition: opacity .15s; color: var(--ochre-deep); }
+.shot .txt { font: 600 clamp(21px, 2.6vw, 26px)/1.1 var(--f-hand); position: relative; }
+.shot .txt::after { content: ""; position: absolute; left: -2px; right: -2px; top: 55%; height: 2px; background: var(--ink); transform: scaleX(0); transform-origin: left; transition: transform .25s ease; }
+.shot input:checked ~ .box svg { opacity: 1; }
+.shot input:checked ~ .txt { color: var(--muted); }
+.shot input:checked ~ .txt::after { transform: scaleX(1); }
+.shot input:focus-visible ~ .box { outline: 2px dashed var(--ochre); outline-offset: 3px; }
+.shots-count { margin-top: 14px; font: 700 13px/1 var(--f-caps); letter-spacing: .24em; text-transform: uppercase; color: var(--muted); }
+
+.polaroid { background: #FBF7EE; padding: 14px 14px 56px; box-shadow: 0 22px 40px -22px rgba(0, 0, 0, .6); transform: rotate(3deg); position: relative; }
+.polaroid img { width: 100%; aspect-ratio: 1; object-fit: cover; }
+.polaroid figcaption { position: absolute; left: 0; right: 0; bottom: 14px; text-align: center; font: 600 28px/1 var(--f-hand); }
+.polaroid .tape { top: -14px; left: 50%; margin-left: -55px; transform: rotate(2deg); }
+
+@media (max-width: 820px) {
+  .shots-grid { grid-template-columns: 1fr; }
+  .polaroid { max-width: 280px; margin: 0 auto; }
+}
