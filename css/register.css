@@ -1,0 +1,25 @@
+/* The closing call: the poster beside the register button. */
+.register { text-align: center; }
+.register .title { margin-left: auto; margin-right: auto; }
+.register .lede { margin-left: auto; margin-right: auto; }
+.register-poster {
+  width: min(420px, 86%); margin: clamp(30px, 5vw, 48px) auto 0; padding: 10px; background: #FBF7EE;
+  box-shadow: 0 30px 50px -28px rgba(0, 0, 0, .7); transform: rotate(-1.5deg); position: relative;
+}
+.register-poster .tape { top: -12px; left: 50%; margin-left: -55px; transform: rotate(-2deg); }
+.register .actions { display: flex; flex-wrap: wrap; justify-content: center; gap: 14px 26px; margin-top: clamp(30px, 5vw, 44px); }
+.share-note { margin-top: 12px; min-height: 1.4em; font: 600 22px/1 var(--f-hand); color: var(--ink-2); }
+
+/* A slim register bar that follows on phones once the hero button has scrolled away. */
+.dock {
+  position: fixed; left: 12px; right: 12px; bottom: 12px; z-index: 50;
+  display: none; align-items: center; justify-content: space-between; gap: 12px;
+  padding: 10px 10px 10px 18px; background: var(--ink); color: var(--paper-hi); border-radius: 4px;
+  box-shadow: 0 16px 30px -12px rgba(0, 0, 0, .6);
+  transform: translateY(140%); transition: transform .3s ease;
+}
+.dock b { font: 400 18px/1.1 var(--f-display); display: block; }
+.dock small { font: 700 11px/1 var(--f-caps); letter-spacing: .2em; text-transform: uppercase; opacity: .7; }
+.dock .btn { padding: 13px 18px 12px; font-size: 13px; }
+.dock.show { transform: none; }
+@media (max-width: 720px) { .dock { display: flex; } body { padding-bottom: 84px; } }
