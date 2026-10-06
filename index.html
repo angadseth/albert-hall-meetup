@@ -16,6 +16,7 @@
 <link rel="stylesheet" href="css/buttons.css">
 <link rel="stylesheet" href="css/hero.css">
 <link rel="stylesheet" href="css/ticket.css">
+<link rel="stylesheet" href="css/light.css">
 </head>
 <body>
 
@@ -92,8 +93,36 @@
   </div>
 </section>
 
+<section class="section" id="light" aria-labelledby="t-light">
+  <div class="wrap">
+    <p class="kicker">Why 4:30</p>
+    <h2 class="title" id="t-light">Chasing the <em>golden hour</em></h2>
+    <p class="lede">We meet with time to scout. Then the sun drops behind Jaipur, the sandstone turns gold, and after sunset the museum lights up against a deep blue sky. These times are worked out for Albert Hall on 10 October.</p>
+
+    <div class="light-band reveal" aria-hidden="true">
+      <div class="sun"></div>
+      <div class="skyline"><svg viewBox="0 0 1000 30" preserveAspectRatio="none"><path fill="currentColor" d="M0 30V22h60v-4h40v4h80v-6h30v6h120v-8l8-6 8 6v8h40V10l14-9 14 9v12h50V16l9-7 9 7v6h60v-5h70v5h120v-7l10-7 10 7v7h120v-4h50v4h30v8Z"/></svg></div>
+      <div class="horizon"></div>
+    </div>
+    <div class="light-marks">
+      <div class="mark" data-at="meet" style="left:0"><time>4:30 PM</time><span>We meet</span></div>
+      <div class="mark" data-at="golden" style="left:40%"><time>—</time><span>Golden hour</span></div>
+      <div class="mark" data-at="sunset" style="left:70%"><time>—</time><span>Sunset</span></div>
+      <div class="mark" data-at="dusk" style="left:100%"><time>—</time><span>Blue hour ends</span></div>
+    </div>
+
+    <div class="light-tips">
+      <div class="reveal"><b>Golden hour</b>Warm, low light on the facade. Shoot the domes against the sky and let the arches throw long shadows.</div>
+      <div class="reveal"><b>Sunset</b>Turn around. Silhouettes of the domes, the lamps and the pigeons against an orange sky.</div>
+      <div class="reveal"><b>Blue hour</b>The museum lights come on while the sky is still blue. Hold steady, or find something to lean on.</div>
+    </div>
+  </div>
+</section>
+
 <script src="js/config.js"></script>
 <script src="js/links.js"></script>
 <script src="js/countdown.js"></script>
+<script src="js/sun.js"></script>
+<script src="js/light.js"></script>
 </body>
 </html>
