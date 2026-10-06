@@ -18,6 +18,7 @@
 <link rel="stylesheet" href="css/ticket.css">
 <link rel="stylesheet" href="css/light.css">
 <link rel="stylesheet" href="css/prizes.css">
+<link rel="stylesheet" href="css/shotlist.css">
 </head>
 <body>
 
@@ -145,10 +146,38 @@
   </div>
 </section>
 
+<section class="section" aria-labelledby="t-shots" style="padding-top:0">
+  <div class="wrap">
+    <p class="kicker">Your shot list</p>
+    <h2 class="title" id="t-shots">Frames worth <em>hunting</em></h2>
+    <p class="lede">Tick them off on the day. The list stays on your phone.</p>
+    <div class="shots-grid">
+      <div class="notebook reveal">
+        <span class="tape" aria-hidden="true"></span>
+        <label class="shot"><input type="checkbox"><span class="box"><svg><use href="#i-tick"/></svg></span><span class="txt">The central dome against the sky</span></label>
+        <label class="shot"><input type="checkbox"><span class="box"><svg><use href="#i-tick"/></svg></span><span class="txt">The whole facade, dead-centre and symmetric</span></label>
+        <label class="shot"><input type="checkbox"><span class="box"><svg><use href="#i-tick"/></svg></span><span class="txt">An arch framing another arch</span></label>
+        <label class="shot"><input type="checkbox"><span class="box"><svg><use href="#i-tick"/></svg></span><span class="txt">Pigeons taking off over the forecourt</span></label>
+        <label class="shot"><input type="checkbox"><span class="box"><svg><use href="#i-tick"/></svg></span><span class="txt">A street lamp and the iron railing at golden hour</span></label>
+        <label class="shot"><input type="checkbox"><span class="box"><svg><use href="#i-tick"/></svg></span><span class="txt">The domes as silhouettes at sunset</span></label>
+        <label class="shot"><input type="checkbox"><span class="box"><svg><use href="#i-tick"/></svg></span><span class="txt">The museum lit up at blue hour</span></label>
+        <label class="shot"><input type="checkbox"><span class="box"><svg><use href="#i-tick"/></svg></span><span class="txt">A portrait of someone you met that evening</span></label>
+        <p class="shots-count" aria-live="polite">0 of 8 frames</p>
+      </div>
+      <figure class="polaroid reveal" style="--r:3deg">
+        <span class="tape" aria-hidden="true"></span>
+        <img src="assets/img/inside.jpg" alt="Carved arches inside a Jaipur hall, lit warm" width="480" height="480" loading="lazy">
+        <figcaption>Jaipur ♡</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
 <script src="js/config.js"></script>
 <script src="js/links.js"></script>
 <script src="js/countdown.js"></script>
 <script src="js/sun.js"></script>
 <script src="js/light.js"></script>
+<script src="js/shots.js"></script>
 </body>
 </html>
