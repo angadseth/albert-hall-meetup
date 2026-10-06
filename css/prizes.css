@@ -1,0 +1,32 @@
+/* Prizes as postage stamps with perforated edges. */
+.stamps { display: grid; grid-template-columns: repeat(3, 1fr); gap: clamp(18px, 3vw, 34px); margin-top: clamp(32px, 5vw, 52px); }
+.stamp {
+  --hole: 7px;
+  position: relative; padding: 12px; background: var(--paper-hi);
+  -webkit-mask:
+    linear-gradient(#000 0 0) content-box,
+    radial-gradient(circle var(--hole) at 50% 50%, #0000 95%, #000) calc(-1.5 * var(--hole)) calc(-1.5 * var(--hole)) / calc(var(--hole) * 3) calc(var(--hole) * 3) round;
+          mask:
+    linear-gradient(#000 0 0) content-box,
+    radial-gradient(circle var(--hole) at 50% 50%, #0000 95%, #000) calc(-1.5 * var(--hole)) calc(-1.5 * var(--hole)) / calc(var(--hole) * 3) calc(var(--hole) * 3) round;
+  filter: drop-shadow(0 10px 16px rgba(52, 36, 14, .25));
+  transition: transform .25s ease;
+}
+.stamp:nth-child(1) { transform: rotate(-2deg); }
+.stamp:nth-child(2) { transform: rotate(1.5deg) translateY(10px); }
+.stamp:nth-child(3) { transform: rotate(-1deg); }
+.stamp:hover { transform: rotate(0) translateY(-4px); }
+.stamp-in {
+  border: 1.5px solid var(--ink); padding: 22px 18px 18px; text-align: center; height: 100%;
+  background: linear-gradient(180deg, rgba(215, 194, 156, .35), transparent 60%);
+}
+.stamp-in svg { width: 46px; height: 46px; margin: 0 auto 10px; display: block; }
+.stamp .rank { font: 700 13px/1 var(--f-caps); letter-spacing: .3em; text-transform: uppercase; color: var(--ink-2); }
+.stamp .amt { display: block; font: 400 clamp(40px, 6vw, 58px)/1.05 var(--f-display); margin: 10px 0 6px; }
+.stamp .what { font: 600 22px/1 var(--f-hand); color: var(--ink-2); }
+.stamp .denom { position: absolute; top: 18px; right: 20px; font: 700 11px/1 var(--f-caps); letter-spacing: .2em; color: var(--muted); }
+
+@media (max-width: 720px) {
+  .stamps { grid-template-columns: 1fr; max-width: 360px; margin-left: auto; margin-right: auto; }
+  .stamp:nth-child(2) { transform: rotate(1.5deg); }
+}
