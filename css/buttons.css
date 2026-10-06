@@ -1,0 +1,21 @@
+/* The one action on the page: register. Ochre is reserved for it. */
+.btn {
+  --lift: 0px;
+  display: inline-flex; align-items: center; gap: 12px;
+  padding: 18px 30px 17px; border: 0; border-radius: 2px; cursor: pointer; text-decoration: none;
+  font: 700 15px/1 var(--f-caps); letter-spacing: .26em; text-transform: uppercase;
+  transform: translateY(var(--lift)); transition: transform .18s ease, box-shadow .18s ease, background .18s;
+}
+.btn-primary {
+  background: var(--ochre); color: var(--paper-hi);
+  box-shadow: 0 2px 0 var(--ochre-deep), 0 14px 28px -14px rgba(138, 82, 22, .9);
+}
+.btn-primary:hover { --lift: -2px; background: #B4732A; box-shadow: 0 4px 0 var(--ochre-deep), 0 20px 34px -16px rgba(138, 82, 22, .9); }
+.btn-primary:active { --lift: 1px; box-shadow: 0 1px 0 var(--ochre-deep); }
+.btn svg { width: 20px; height: 20px; }
+
+.btn-ghost {
+  background: transparent; color: var(--ink); padding: 14px 4px 10px;
+  border-bottom: 1.5px solid var(--ink); border-radius: 0; letter-spacing: .22em;
+}
+.btn-ghost:hover { --lift: -1px; }
