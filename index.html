@@ -15,6 +15,7 @@
 <link rel="stylesheet" href="css/paper.css">
 <link rel="stylesheet" href="css/buttons.css">
 <link rel="stylesheet" href="css/hero.css">
+<link rel="stylesheet" href="css/ticket.css">
 </head>
 <body>
 
@@ -68,7 +69,31 @@
   </div>
 </header>
 
+<section class="section" aria-labelledby="t-count" style="padding-top:0">
+  <div class="wrap">
+    <div class="ticket reveal">
+      <div class="ticket-main">
+        <p class="kicker" id="t-count">The shutter opens in</p>
+        <div class="countdown" role="timer" aria-live="off">
+          <div class="unit"><span class="num" data-cd="d">00</span><span class="lbl">Days</span></div><span class="sep">:</span>
+          <div class="unit"><span class="num" data-cd="h">00</span><span class="lbl">Hours</span></div><span class="sep">:</span>
+          <div class="unit"><span class="num" data-cd="m">00</span><span class="lbl">Minutes</span></div><span class="sep">:</span>
+          <div class="unit"><span class="num" data-cd="s">00</span><span class="lbl">Seconds</span></div>
+        </div>
+        <p class="countdown-done">We're live at Albert Hall. Come find us.</p>
+      </div>
+      <div class="ticket-stub">
+        <span class="kicker">Admit one</span>
+        <span class="no">10·10</span>
+        <span class="kicker">Sat · 4:30 PM</span>
+        <span class="hand">New people, same passion</span>
+      </div>
+    </div>
+  </div>
+</section>
+
 <script src="js/config.js"></script>
 <script src="js/links.js"></script>
+<script src="js/countdown.js"></script>
 </body>
 </html>
