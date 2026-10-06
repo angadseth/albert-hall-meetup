@@ -1,0 +1,28 @@
+/* Colours and type, taken from the poster: old paper, printer's black, one ochre. */
+:root {
+  --paper: #EFE4CF;
+  --paper-hi: #F6EEDC;
+  --paper-lo: #E2D2B3;
+  --kraft: #D7C29C;
+  --ink: #1B1712;
+  --ink-2: #3E352B;
+  --muted: #76674F;
+  --line: rgba(27, 23, 18, .16);
+  --chart: #1C2632;          /* the sea-chart corners */
+  --ochre: #A8681F;          /* one job: the brand word and the one action */
+  --ochre-deep: #8A5216;
+  --sky-1: #F6C27A;
+  --sky-2: #E7895A;
+  --sky-3: #5B6C8F;
+  --sky-4: #27324A;
+
+  --f-display: 'Abril Fatface', 'Times New Roman', serif;
+  --f-brush: 'Kaushan Script', cursive;
+  --f-hand: 'Caveat', cursive;
+  --f-caps: 'Cormorant Garamond', Georgia, serif;
+  --f-body: 'Work Sans', system-ui, sans-serif;
+
+  --wrap: 1120px;
+  --gutter: clamp(16px, 4vw, 40px);
+  --shadow-paper: 0 1px 0 rgba(255, 255, 255, .5) inset, 0 18px 40px -22px rgba(52, 36, 14, .55);
+}
