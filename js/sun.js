@@ -28,9 +28,9 @@
     return null;
   }
 
-  // The evening of 10 October 2026, from the 4:30 PM meet.
+  // The evening of 10 October 2026, from the 3:00 PM meet.
   function evening(place = ALBERT_HALL) {
-    const meet = new Date('2026-10-10T16:30:00+05:30');
+    const meet = new Date('2026-10-10T15:00:00+05:30');
     return {
       meet,
       golden: crossing(meet, 6, place),     // golden hour: sun below 6°

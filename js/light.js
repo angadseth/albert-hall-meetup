@@ -3,8 +3,14 @@
   const band = document.querySelector('.light-band');
   if (!band || !window.Sun) return;
   const e = window.Sun.evening();
-  const t0 = e.meet.getTime(), t1 = e.dusk.getTime();
-  const pct = d => ((d.getTime() - t0) / (t1 - t0) * 100).toFixed(1) + '%';
+  // Two-part scale: the long afternoon walk up to golden hour takes the first 40%, and the
+  // fast-moving last hour of light gets the rest, so its labels have room.
+  const t0 = e.meet.getTime(), tg = e.golden.getTime(), t1 = e.dusk.getTime();
+  const pct = d => {
+    const t = d.getTime();
+    const x = t < tg ? (t - t0) / (tg - t0) * 40 : 40 + (t - tg) / (t1 - tg) * 60;
+    return x.toFixed(1) + '%';
+  };
   band.style.setProperty('--g', pct(e.golden));
   band.style.setProperty('--s', pct(e.sunset));
   band.style.setProperty('--b', pct(e.blue));
