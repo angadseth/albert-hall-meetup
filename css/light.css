@@ -1,0 +1,38 @@
+/* The light timeline: the sky's own colours from the meet to dusk. */
+.light-band {
+  position: relative; margin-top: clamp(36px, 6vw, 60px);
+  height: 120px; border-radius: 3px; overflow: hidden;
+  background: linear-gradient(90deg, #A9C7DA 0%, #E9D6A9 var(--g, 40%), var(--sky-1) calc(var(--g, 40%) + 8%),
+              var(--sky-2) var(--s, 70%), var(--sky-3) var(--b, 82%), var(--sky-4) 100%);
+  box-shadow: var(--shadow-paper);
+}
+.light-band .sun {
+  position: absolute; width: 34px; height: 34px; border-radius: 50%;
+  left: calc(var(--s, 70%) - 17px); top: 74px;
+  background: radial-gradient(circle, #FFF2C9 0 40%, #F8B85C 70%, #F8B85C00 72%);
+  box-shadow: 0 0 40px 12px rgba(248, 184, 92, .55);
+}
+.light-band .horizon { position: absolute; left: 0; right: 0; top: 90px; height: 30px; background: rgba(27, 23, 18, .82); }
+.light-band .skyline { position: absolute; left: 0; right: 0; top: 64px; height: 30px; color: rgba(27, 23, 18, .82); }
+.light-band .skyline svg { width: 100%; height: 100%; display: block; }
+
+.light-marks { position: relative; height: 112px; margin-top: 4px; }
+.mark { position: absolute; top: 0; transform: translateX(-50%); text-align: center; width: 120px; }
+.mark::before { content: ""; display: block; width: 1.5px; height: 18px; background: var(--ink); margin: 0 auto 8px; }
+.mark time { display: block; font: 400 26px/1 var(--f-display); }
+.mark span { display: block; margin-top: 6px; font: 700 12px/1.25 var(--f-caps); letter-spacing: .18em; text-transform: uppercase; color: var(--ink-2); }
+.mark:first-child { transform: none; text-align: left; }
+.mark:first-child::before { margin-left: 0; }
+.mark:last-child { transform: translateX(-100%); text-align: right; }
+.mark:last-child::before { margin-right: 0; }
+
+.light-tips { display: grid; grid-template-columns: repeat(3, 1fr); gap: clamp(16px, 3vw, 32px); margin-top: 28px; }
+.light-tips div { border-top: 1.5px solid var(--ink); padding-top: 14px; color: var(--ink-2); font-size: 16px; }
+.light-tips b { display: block; font: 600 26px/1 var(--f-hand); color: var(--ink); margin-bottom: 6px; }
+
+@media (max-width: 720px) {
+  .light-marks { height: auto; display: grid; grid-template-columns: 1fr 1fr; gap: 18px 12px; margin-top: 18px; }
+  .mark, .mark:first-child, .mark:last-child { position: static; transform: none; text-align: left; width: auto; }
+  .mark::before, .mark:first-child::before, .mark:last-child::before { width: 22px; height: 1.5px; margin: 0 0 10px; }
+  .light-tips { grid-template-columns: 1fr; }
+}
