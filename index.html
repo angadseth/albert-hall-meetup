@@ -21,6 +21,7 @@
 <link rel="stylesheet" href="css/shotlist.css">
 <link rel="stylesheet" href="css/place.css">
 <link rel="stylesheet" href="css/venue.css">
+<link rel="stylesheet" href="css/register.css">
 </head>
 <body>
 
@@ -223,11 +224,29 @@
   </div>
 </section>
 
+<section class="section register" id="register" aria-labelledby="t-reg">
+  <div class="wrap">
+    <p class="kicker">One minute, one form</p>
+    <h2 class="title" id="t-reg">Save your <em>spot</em></h2>
+    <p class="lede">Register so we know you're coming, then bring your eye for a frame. Explore, click, connect.</p>
+    <div class="actions">
+      <a class="btn btn-primary" data-register href="#register">Register now <svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
+      <button class="btn btn-ghost" type="button" data-share><svg aria-hidden="true"><use href="#i-share"/></svg> Share with a friend</button>
+    </div>
+    <p class="share-note" aria-live="polite"></p>
+    <figure class="register-poster reveal" style="--r:-1.5deg">
+      <span class="tape" aria-hidden="true"></span>
+      <img src="assets/img/poster.jpg" alt="Event poster: Albert Hall Museum Photoshoot Meetup, 10 October, Saturday, 4:30 PM onwards, Jaipur. Prizes of 8,000, 5,000 and 3,000 rupees in Amazon vouchers." width="1254" height="1254" loading="lazy">
+    </figure>
+  </div>
+</section>
+
 <script src="js/config.js"></script>
 <script src="js/links.js"></script>
 <script src="js/countdown.js"></script>
 <script src="js/sun.js"></script>
 <script src="js/light.js"></script>
 <script src="js/shots.js"></script>
+<script src="js/share.js"></script>
 </body>
 </html>
